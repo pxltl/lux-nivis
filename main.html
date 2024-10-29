@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>ad astra, ut luceant...</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <div id="content">
+                <div id ="header">
+                    <h1>Lux Nivis</h1>
+                </div>
+                <div class="forms" id="popUp">
+                    <div>
+                        <h2>Sign-Up</h2>
+                        <p id="message">
+                            Uh oh! it looks like you don't have an account yet. Create an account now to— 
+                            What's that? Uh-umm... I'm sorry for the inconvinience but it seems that signing-up isn't available at the moment. 
+                            Please come back later to sign-in again, in the meantime would you like to make a review?
+                        </p>
+                        <form action="index.html">
+                            <p class="sign">Enter your Name: <input type="text" name="name"></p>
+                            <p class="sign">Sex:
+                                <input type="radio" name="gender" value="male">Male
+                                <input type="radio" name="gender" value="female">Female
+                            </p>
+                            <p class="sign">Gender: 
+                                <select name="gender">
+                                    <option value="default">Prefer not to Say</option>
+                                    <option value="masculine">Masculine</option>
+                                    <option value="feminine">Feminine</option>
+                                    <option value="lesbian">Lesbian</option>
+                                    <option value="gay">Gay</option>
+                                    <option value="bisexual">Bisexual</option>
+                                    <option value="transgender">Transgender</option>
+                                </select>
+                            </p>
+                            <p class="sign">Write your comment below:
+                                <textarea rows="5" cols="50" name="description" placeholder="enter description here..."></textarea>
+                            </p>
+                            <input type="reset" name="reset" value="Reset">
+                            <input type="button" name="cancel" value="Cancel">
+                            <input type="submit" name="submit" value="Submit">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

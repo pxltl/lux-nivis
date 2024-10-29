@@ -1,0 +1,151 @@
+/**fonts**/
+@font-face {
+    font-family: PrettyDahlia;
+    src: url(resource/pretty_dahlia/Pretty\ Dahlia.otf);
+}
+
+/**General Styles**/
+::-webkit-scrollbar{
+    display: none;
+} 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #c9ecf4;
+    text-shadow: 0 7px 50px #8ad4d9,
+                 0 3px 10px #bbd3e753;
+    margin-top: -7px;
+    background-image: url(resource/bg.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: PrettyDahlia;
+    font-size: 100px;
+    margin: auto;
+    padding: 30px 75px;
+    line-height: 100%;
+}
+a{
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/**Styles for Forms**/
+input[name=login]{
+    background-image: linear-gradient(145deg, #8ad4d9, #ffffff);
+    border-image: linear-gradient(145deg, #daf0f2af, #ffffffbd);
+    box-shadow: inset 0 0 10px 5px #f3f3f372,
+                      0 0 10px 10px #ffffff25;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px 25px;
+    width: fit-content;
+    color: #63879d;
+}
+input[name=cancel], input[name=submit], input[name=reset]{
+    background-image: linear-gradient(145deg, #8ad4d9, #ffffff);
+    border-image: linear-gradient(145deg, #daf0f2af, #ffffffbd);
+    box-shadow: inset 0 0 10px 5px #f3f3f372,
+                      0 0 10px 10px #ffffff25;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 8px 20px;
+    font-weight: 900;
+    width: fit-content;
+    color: #63879d;
+}
+input[type=text], input[type=password], select{
+    border-radius: 3px;
+    border-color: #a7e5ea;
+    background-image: linear-gradient(145deg, #a7e5ea, #e3feff);
+    color: #63879d;
+}
+select{
+    width: 50%;
+    text-align: center;
+}
+textarea{
+    resize: vertical;
+    padding: 5px;
+    text-indent: 2rem;
+    text-align: justify;
+    border-radius: 4px;
+    border-color: #a7e5ea;
+    background-image: linear-gradient(180deg, #a7e5ea, #e3feff);
+    color: #63879d;
+}
+
+/**Container Styles**/
+#content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.forms div{
+    background-image: linear-gradient(145deg, #8ad4d9af, #ffffffbd);
+    box-shadow: inset 0 0 10px 5px #00000072,
+                      0 0 10px 10px #ffffff25;
+    border: 7px solid #c9ecf4;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 25px 50px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15%;
+}
+
+/**index.html**/
+#header{
+    text-align: right;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle farthest-corner at 90% -220%, #8ad4d9d2 50%, #00000000 70%);
+    position: absolute;
+    right: 0;
+}
+#loginForms{
+    position: absolute;
+    height: max-content;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+}
+#special{
+    margin-top: -10px;
+    text-align: right;
+}
+
+/**main.html**/
+#popUp{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 25px;
+}
+.sign{
+    font-size: 15px;
+    color: #63879d;
+    text-shadow: 0 0px 10px #00000097;
+}
+#message{
+    color: #63879d;
+    text-shadow: 0 0px 10px #0000001e;
+    font-size: 11px;
+    text-indent: 3rem;
+    text-align: justify;
+}
